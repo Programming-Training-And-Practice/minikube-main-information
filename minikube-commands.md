@@ -12,6 +12,7 @@
 * [minikube stop](#minikube-stop)
 * [minikube ssh](#minikube-ssh)
 * [minikube version](#minikube-version)
+* [minikube addons](#minikube-addons)
 * [Help.](#help)
 
 
@@ -88,6 +89,19 @@
 | Key/Command                                                        | Description                                                             |
 | ------------------------------------------------------------------ | ----------------------------------------------------------------------- |
 | minikube version                                                   | Show version of minikube.                                               |
+
+
+
+
+
+## minikube addons.
+
+| Key/Command                                                        | Description                                                                                                        |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| minikube addons list                                               |                                                                                                                    |
+| minikube addons enable [ADDON_NAME]                                |                                                                                                                    |
+|                                                                    |                                                                                                                    |
+
 
 
 

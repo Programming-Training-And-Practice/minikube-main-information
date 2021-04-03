@@ -47,9 +47,15 @@
 | Key/Command                                                        | Description                                                                                                        |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
 | minikube start                                                     | Create and run VM instance with K8s Mini Cluster with default parameters.                                          |
-| minikube start --cps=4 --memory=8gb --disk-size=25gb               | Create and run VM instance with K8s Mini Cluster with our parameters.                                              |
-| minikube start --cps=4 --memory=8000mb --disk-size=25gb            | Create and run VM instance with K8s Mini Cluster with our parameters.                                              |
 | minikube start -p nameCluster                                      | Create and run VM instance with K8s Mini Cluster with default parameters and with the defined "nameCluster".       |
+| minikube start --vm=true                                           |                                                                                                                    |
+| minikube start --vm=true --addons ingress                          |                                                                                                                    |
+|                                                                    |                                                                                                                    |
+
+* Not Work
+`minikube start --vm=true --cpus=4 --memory=6144`
+`minikube start --cps=4 --memory=8gb --disk-size=25gb`
+`minikube start --cps=4 --memory=8000mb --disk-size=25gb`
 
 
 
@@ -73,6 +79,16 @@
 
 
 
+## minikube ssh
+
+| Key/Command                                                        | Description                                                             |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------- |
+| minikube config set cpus [amountCPUs]                              |                                                                         |
+| minikube config set memory [amountMemory]                          |                                                                         |
+| minikube delete                                                    |                                                                         |
+| minikube config get cpus                                           |                                                                         |
+| minikube config get memory                                         |                                                                         |
+|                                                                    |                                                                         |
 
 
 ## minikube ssh
@@ -99,7 +115,9 @@
 | Key/Command                                                        | Description                                                                                                        |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
 | minikube addons list                                               |                                                                                                                    |
-| minikube addons enable [ADDON_NAME]                                |                                                                                                                    |
+| minikube addons enable [ADDONS_NAME]                               |                                                                                                                    |
+| minikube addons disable [ADDONS_NAME]                              |                                                                                                                    |
+| minikube addons open   [ADDONS_NAME]                               |                                                                                                                    |
 |                                                                    |                                                                                                                    |
 
 

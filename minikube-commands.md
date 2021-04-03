@@ -53,9 +53,9 @@
 |                                                                    |                                                                                                                    |
 
 * Not Work
-`minikube start --vm=true --cpus=4 --memory=6144`
-`minikube start --cps=4 --memory=8gb --disk-size=25gb`
-`minikube start --cps=4 --memory=8000mb --disk-size=25gb`
+  * `minikube start --vm=true --cpus=4 --memory=6144`
+  * `minikube start --cps=4 --memory=8gb --disk-size=25gb`
+  * `minikube start --cps=4 --memory=8000mb --disk-size=25gb`
 
 
 
